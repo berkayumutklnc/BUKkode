@@ -91,9 +91,10 @@ postForm.addEventListener('submit', async (e) => {
 
 // Gönderileri yükleme
 async function loadPosts() {
-    postsContainer.innerHTML = '';
-    
     try {
+        // postsContainer'ı temizle
+        postsContainer.innerHTML = '';
+
         const snapshot = await db.collection('posts')
             .orderBy('timestamp', 'desc')
             .get();
@@ -205,4 +206,4 @@ document.querySelector('.navbar-nav').appendChild(logoutButton);
 // Sayfa yüklendiğinde gönderileri yükle
 document.addEventListener('DOMContentLoaded', () => {
     loadPosts();
-}); 
+});
