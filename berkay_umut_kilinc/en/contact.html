@@ -3,83 +3,93 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content />
-        <meta name="author" content />
-        <title>İletişim </title>
-        <!-- icon -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- google font-->
+        <title>Contact - Berkay Umut Kılınç</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- css-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+        <!-- seo kısımları-->
+        <meta name="description" content="Berkay Umut KILINÇ, an experienced SAP ABAP and Web Developer. Professional support for SAP projects, AR solutions, ERP development, and web applications.">
+        <meta name="keywords" content="Berkay Umut KILINÇ, SAP ABAP Developer, Web Developer, SAP consultant, web development, ERP software, AR projects, resume, SAP expert, freelance SAP ABAP, Turkey">
+        <link rel="canonical" href="https://www.berkayumutklnc.com/">
+        <meta name="author" content="Berkay Umut KILINÇ">
     </head>
-    <body class="d-flex flex-column">
+    <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
-            <!-- Navigation-->
+            <!-- Navbar-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
                 <div class="container px-5">
                     <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Berkay Umut Kılınç</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">CV</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projeler</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                            <!-- Language Selection -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown">
+                                    <i class="bi bi-globe"></i> EN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../tr/contact.html">Türkçe</a></li>
+                                    <li><a class="dropdown-item" href="contact.html">English</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <!-- tüm sayfa-->
+            <!-- İletişim Formu-->
             <section class="py-5">
                 <div class="container px-5">
-                    <!-- iletişim alanı-->
+                    <!-- İletişim formu-->
                     <div class="bg-light rounded-4 py-5 px-4 px-md-5">
                         <div class="text-center mb-5">
                             <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                            <h1 class="fw-bolder">İletişime Geç</h1>
-                            <p class="lead fw-normal text-muted mb-0">Seninle iletişime geçmek için sabırsızlanıyorum!</p>
+                            <h1 class="fw-bolder">Get in touch</h1>
+                            <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
                         </div>
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
                                 <form id="contactForm">
                                     <!-- İsim input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="İsminizi giriniz..." required />
-                                        <label for="name">İsim Soyisim</label>
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." required />
+                                        <label for="name">Full name</label>
                                     </div>
                                     <!-- Email input-->
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
-                                        <label for="email">Email adresi</label>
+                                        <label for="email">Email address</label>
                                     </div>
-                                    <!-- Telefon input-->
+                                    <!-- telno input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" required />
-                                        <label for="phone">Telefon numarası</label>
+                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" />
+                                        <label for="phone">Phone number</label>
                                     </div>
                                     <!-- Mesaj input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" type="text" placeholder="Mesajınızı giriniz..." style="height: 10rem" required></textarea>
-                                        <label for="message">Mesaj</label>
+                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                    <!-- Submit success message-->
+                                    <div class="d-none" id="submitSuccessMessage">
+                                        <div class="text-center mb-3">
+                                            <div class="fw-bolder">Form submission successful!</div>
+                                            <p>You will be redirected to the thank you page.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Submit error message-->
+                                    <div class="d-none" id="submitErrorMessage">
+                                        <div class="text-center text-danger mb-3">Error sending message!</div>
                                     </div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid">
-                                        <button class="btn btn-primary btn-lg" type="submit" id="submitButton">Gönder</button>
-                                        <div id="submitSuccessMessage" class="d-none">
-                                            <div class="text-center mb-3 mt-2">
-                                                <div class="fw-bolder text-success">Mesajınız başarıyla gönderildi!</div>
-                                            </div>
-                                        </div>
-                                        <div id="submitErrorMessage" class="d-none">
-                                            <div class="text-center text-danger mb-3 mt-2">Mesaj gönderilirken hata oluştu!</div>
-                                        </div>
-                                    </div>
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
                                 </form>
                             </div>
                         </div>
@@ -87,45 +97,29 @@
                 </div>
             </section>
         </main>
-        <!-- Footer kısmı buraya gelecek-->
+        <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; BUKkode 2025</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Gizlilik</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Şartlar</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="contact.html">İletişim</a>
-                    </div>
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Berkay Umut Kılınç 2025</div></div>
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- JS-->
-        <script src="js/scripts.js"></script>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <!-- Email.js CDN -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <!-- Contact form JavaScript-->
+        <!-- Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JavaScript-->
         <script>
         (function() {
-            // EmailJS başlatma
             emailjs.init("pecc8JsK3vMsc94hK");
 
             document.getElementById('contactForm').addEventListener('submit', function(event) {
                 event.preventDefault();
-
-                // Submit butonunu devre dışı bırak
                 document.getElementById('submitButton').disabled = true;
-                
-                // Hata ve başarı mesajlarını gizle
                 document.getElementById('submitSuccessMessage').classList.add('d-none');
                 document.getElementById('submitErrorMessage').classList.add('d-none');
 
-                // Form verilerini al
                 var templateParams = {
                     from_name: document.getElementById('name').value,
                     from_email: document.getElementById('email').value,
@@ -133,18 +127,22 @@
                     message: document.getElementById('message').value
                 };
 
-                // EmailJS ile email gönder
                 emailjs.send('service_ybbelc3', 'template_mttcsts', templateParams)
                     .then(function() {
-                        // Başarılı gönderimden sonra teşekkürler sayfasına yönlendir
-                        window.location.href = 'thanks.html';
+                        document.getElementById('submitSuccessMessage').classList.remove('d-none');
+                        document.getElementById('contactForm').reset();
+                        setTimeout(function() {
+                            window.location.href = "thanks.html";
+                        }, 2000);
                     }, function(error) {
                         document.getElementById('submitErrorMessage').classList.remove('d-none');
                         console.log('FAILED...', error);
+                    })
+                    .finally(function() {
                         document.getElementById('submitButton').disabled = false;
                     });
             });
         })();
         </script>
     </body>
-</html>
+</html> 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Forum - Berkay Umut Kılınç</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+        <!-- seo kısımları-->
+        <meta name="description" content="Berkay Umut KILINÇ, an experienced SAP ABAP and Web Developer. Professional support for SAP projects, AR solutions, ERP development, and web applications.">
+        <meta name="keywords" content="Berkay Umut KILINÇ, SAP ABAP Developer, Web Developer, SAP consultant, web development, ERP software, AR projects, resume, SAP expert, freelance SAP ABAP, Turkey">
+        <link rel="canonical" href="https://www.berkayumutklnc.com/">
+        <meta name="author" content="Berkay Umut KILINÇ">
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Berkay Umut Kılınç</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="forum.html">Forum</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <!-- Dil Seçimi -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-globe"></i> EN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../tr/forum.html">Türkçe</a></li>
+                                <li><a class="dropdown-item" href="forum.html">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Login -->
+        <div id="loginSection" class="container px-5 py-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Forum</span></h1>
+                <p class="lead fw-light mb-4">Please sign in to continue</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <button id="googleSignIn" class="btn btn-primary w-100">
+                        <i class="bi bi-google me-2"></i>Sign in with Google
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forum Content -->
+        <div id="forumContent" style="display: none;">
+            <div class="container px-5 py-5">
+                <!-- Create New Post -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Create New Post</h5>
+                        <form id="newPostForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="postTitle" placeholder="Title" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="postContent" rows="3" placeholder="Content" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Posts -->
+                <div id="posts">
+                    <!-- Gönderiler dinamik olarak buraya eklenecek -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Berkay Umut Kılınç 2025</div></div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Forum JS -->
+        <script src="../js/forum.js"></script>
+    </body>
+</html> 
